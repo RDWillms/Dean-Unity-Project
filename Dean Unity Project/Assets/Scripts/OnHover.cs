@@ -2,23 +2,48 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class OnHover : MonoBehaviour
 
 {
     public GameObject text;
+    bool Stop;
+    //public Text UIText;
     public void Start()
     {
         text.SetActive(false);
+        //UIText = text.GetComponent<Text>();
     }
-    // Update is called once per frame
-    void OnMouseOver()
+
+    public void Update()
     {
-        text.SetActive(true);
+        StopText();
+    }
+
+    void OnMouseOver()
+    { if (Stop == false)
+        {
+            //Sets to where it will activate text when hovering over item//
+            text.SetActive(true);
+        }
     }
 
     private void OnMouseExit()
     {
-        text.SetActive(false);
+        if (Stop == false)
+        {
+            text.SetActive(false);
+        }
+    }
+    void StopText()
+    {
+        if (MixtureSlot.emptySlots == 0)
+        {
+            text.SetActive(false);
+            Stop = true;
+            Debug.Log("Stop is true");
+        }
     }
 }
+    

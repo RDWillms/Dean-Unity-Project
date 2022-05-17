@@ -11,7 +11,6 @@ public class MenuController : MonoBehaviour
         {
             Application.Quit();
             Debug.Log("Quit");
-            
         }
         else
         {
