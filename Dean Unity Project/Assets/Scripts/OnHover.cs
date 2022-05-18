@@ -39,7 +39,7 @@ public class OnHover : MonoBehaviour
     void StopText()
     {
         if (MixtureSlot.emptySlots == 0)
-        {
+        { //When all empty slots are filled, deactivate mixtureText//
             text.SetActive(false);
             Stop = true;
             Debug.Log("Stop is true");

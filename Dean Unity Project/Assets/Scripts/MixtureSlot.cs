@@ -9,7 +9,7 @@ public class MixtureSlot : MonoBehaviour, IDropHandler
     
 
     public void Awake()
-    {
+    { //When game is first run, adds how many productSlots are present in the scene and adds that number to the emptySlots variable//
         emptySlots++;
     }
     public void OnDrop(PointerEventData eventData)
@@ -17,7 +17,7 @@ public class MixtureSlot : MonoBehaviour, IDropHandler
     {
         Debug.Log("OnDrop");
         if (eventData.pointerDrag != null)
-        {
+        { //When mixture is dropped on top of productSlot UI element it snaps the mixture to the anchor position of the Slot//
             eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
             emptySlots--;
             Debug.Log("This box is filled");
