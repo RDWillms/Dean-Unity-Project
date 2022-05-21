@@ -16,6 +16,11 @@ public class MenuController : MonoBehaviour
         {
             SceneManager.LoadScene(SceneName);
         }
-    }  
+    } 
+    
+    public void NextLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //Grabs the buildIndex of the current scene and adds it by one to laod the next scene in the build settings.
+    }
 }
 

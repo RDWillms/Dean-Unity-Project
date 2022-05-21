@@ -7,7 +7,6 @@ public class CompoundCheck : MonoBehaviour
 {
     public GameObject productSlot;
     public GameObject product;
-    public GameObject compoundText;
     public GameObject continueButton;
 
     public Animator anim;
@@ -17,7 +16,6 @@ public class CompoundCheck : MonoBehaviour
     public void Start()
     {
         product.SetActive(false);
-        compoundText.SetActive(false);
         continueButton.SetActive(false);
 }
     public void Mixing()
@@ -26,7 +24,6 @@ public class CompoundCheck : MonoBehaviour
         {
             product.SetActive(true);
             anim.SetBool("Compounding?", true);
-            compoundText.SetActive(true);
             Compounded = true;
             continueButton.SetActive(true);
             Debug.Log("Compounding mixtures!");

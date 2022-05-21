@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using TMPro;
 
 public class OnHover : MonoBehaviour
 
@@ -10,13 +11,12 @@ public class OnHover : MonoBehaviour
     public CompoundCheck compoundCheck;
 
     public GameObject text;
+    public TextMeshProUGUI explanationText;
+    public ExplanationText myText;
+
     bool Stop;
-    //public Text UIText;
-    public void Awake()
-    {
-        text.SetActive(false);
-        //UIText = text.GetComponent<Text>();
-    }
+
+    public int index;
 
     public void Update()
     {
@@ -27,7 +27,8 @@ public class OnHover : MonoBehaviour
     { if (Stop == false)
         {
             //Sets to where it will activate text when hovering over item//
-            text.SetActive(true);
+            //text.SetActive(true);
+            explanationText.text = myText.explanations[index]; //Sets explanation text to the explanations array. The int variable determines what element in the array is displayed in the text.
         }
     }
 
@@ -35,15 +36,16 @@ public class OnHover : MonoBehaviour
     {
         if (Stop == false)
         {
-            text.SetActive(false);
+            explanationText.text = null;
         }
     }
     void StopText()
     {
         if (compoundCheck.Compounded == true)
-        { //When all empty slots are filled, deactivate mixtureText//
-            text.SetActive(false);
+        { //When all empty slots are filled, deactivate explanationText//
+            //text.SetActive(false);
             Stop = true;
+            explanationText.text = myText.explanations[4];
             Debug.Log("Stop is true");
         }
     }

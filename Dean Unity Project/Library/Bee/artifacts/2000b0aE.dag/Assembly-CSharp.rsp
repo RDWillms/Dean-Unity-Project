@@ -359,6 +359,7 @@
 "Assets/Scripts/Draggable.cs"
 "Assets/Scripts/DragLayer.cs"
 "Assets/Scripts/Drag_N_Drop.cs"
+"Assets/Scripts/ExplanationText.cs"
 "Assets/Scripts/MenuController.cs"
 "Assets/Scripts/MixtureCount.cs"
 "Assets/Scripts/MixtureSlot.cs"
