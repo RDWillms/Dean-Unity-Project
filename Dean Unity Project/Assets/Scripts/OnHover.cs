@@ -7,10 +7,12 @@ using UnityEngine.UI;
 public class OnHover : MonoBehaviour
 
 {
+    public CompoundCheck compoundCheck;
+
     public GameObject text;
     bool Stop;
     //public Text UIText;
-    public void Start()
+    public void Awake()
     {
         text.SetActive(false);
         //UIText = text.GetComponent<Text>();
@@ -38,7 +40,7 @@ public class OnHover : MonoBehaviour
     }
     void StopText()
     {
-        if (MixtureSlot.emptySlots == 0)
+        if (compoundCheck.Compounded == true)
         { //When all empty slots are filled, deactivate mixtureText//
             text.SetActive(false);
             Stop = true;

@@ -8,12 +8,14 @@ public class DialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
+    public GameObject startButton;
 
     private Queue<string> sentences;
     //private DialogueTrigger trigger;
 
     void Start()
     {
+        startButton.SetActive(false);
         sentences = new Queue<string>();
         //trigger.TriggerDialogue();
     }
@@ -47,6 +49,7 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
+        startButton.SetActive(true);
         Debug.Log("End of conversation");
     }
 }

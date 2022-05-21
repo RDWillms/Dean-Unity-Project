@@ -155,7 +155,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 588002411}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -288,11 +288,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 588002411}
-  m_RootOrder: 7
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 206.30002, y: -63.44003}
+  m_AnchoredPosition: {x: 183, y: -68}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &42221777
@@ -380,8 +380,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.5972595, y: -5.2637634}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 1.3, y: 0.0000081062}
+  m_SizeDelta: {x: 512.404, y: 79.372}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &52964004
 MonoBehaviour:
@@ -403,10 +403,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This is Milk
+  m_text: Milk is a common ingredient you can find at your grocery store. The fat
+    proteins that are found in milk can be used to provide creaminess and richness
+    to your favorite dishes.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -430,8 +432,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 22.94
+  m_fontSizeBase: 22.94
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1361,11 +1363,11 @@ RectTransform:
   - {fileID: 149418846}
   - {fileID: 401952072}
   - {fileID: 1634151284}
+  - {fileID: 42221776}
   - {fileID: 2047910721}
   - {fileID: 942662622}
   - {fileID: 1095076269}
   - {fileID: 41643352}
-  - {fileID: 42221776}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1405,6 +1407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 2106600295}
   dialogueText: {fileID: 2047479757}
+  startButton: {fileID: 1150349748}
 --- !u!4 &608772173
 Transform:
   m_ObjectHideFlags: 0
@@ -1523,9 +1526,42 @@ MonoBehaviour:
   dialogue:
     name: Professor Chem
     sentences:
-    - Hello there! I'm Professor Chem!
-    - I'm an NPC!
-    - And I'm here to tell you about my lastest invention, the Compounder!
+    - Oh why hello there, young scientist!
+    - You arrived just in time to witness my new invention!
+    - It will change how we interact with the world, nay the universe!
+    - Oh my, where are my manners? You don't even know who I am.
+    - Ahem...
+    - My name is Professor Chem. I've been studying the intricacies of chemistry
+      for the last 15 years.
+    - 'Chemistry is such an interesting field to study. It is one of the key building
+      blocks to the creation of our universe after all! '
+    - 'I love digging into how combining different components and mixtures create
+      such amazing compounds that we see, smell, and use in our daily lives. '
+    - Hence, the inspiration for my latest invention...The Compounder!
+    - (Trademark Pending)
+    - 'The Compounder is a device I made that takes different mixtures and components
+      and combines them to make compounds used to create amazing products.  '
+    - A mixture is a substance of one component or element that, when mixed together,
+      creates soemthing entirely new and interesting!
+    - When those mixtures are combined, compounds are made to create gasses, foods,
+      and the world itself!
+    - Did you know that you and everything around you is composed of millions of
+      different complex compounds! Amazing, yes?
+    - I'm so enthralled in the chemical concoctions that make up our world that I
+      wanted to create an invention that would allow chemists like myself to make
+      these compounds with ease.
+    - 'Unfortunatley, I''ve been so cooked up in the lab working on this project
+      that I haven''t had the chance to test it yet... '
+    - But, that's where you come in!
+    - I was just looking for an aspiring Junior Chemist to help me take this thing
+      for a spin.
+    - I know chemistry might seem intimidating to you. I get it, it's a very complex
+      field of study.
+    - But, I promise you, the Compounder can be used with ease!
+    - Just drag the mixtures into their mixture slots, press the good ol' compound
+      button and let the Compounder do the rest of the work!
+    - It's elementary, really.
+    - So, what are you waiting for? Click the Start Button below and let's get Compounding!
 --- !u!1 &894877313
 GameObject:
   m_ObjectHideFlags: 0
@@ -1648,12 +1684,12 @@ RectTransform:
   m_Children:
   - {fileID: 52964003}
   m_Father: {fileID: 588002411}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 174.61, y: -159}
-  m_SizeDelta: {x: 94.07, y: 97.47}
+  m_AnchoredPosition: {x: 188.51, y: -173.72}
+  m_SizeDelta: {x: 98.88, y: 128.46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!210 &1095076270
 SortingGroup:
@@ -1742,6 +1778,11 @@ Transform:
   m_Father: {fileID: 1557952020}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1150349748 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 571310685963740394, guid: 3cfc1410bbb78d54bae7e5eda9bdde56, type: 3}
+  m_PrefabInstance: {fileID: 1680305705}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1167079067
 GameObject:
   m_ObjectHideFlags: 0
@@ -2008,7 +2049,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7227912313745612568, guid: 72d5069ff3031974a8f11726510940aa, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7227912313745612568, guid: 72d5069ff3031974a8f11726510940aa, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2221,7 +2262,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 81, y: -71}
+  m_AnchoredPosition: {x: 53, y: -71}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &1634151285
@@ -2508,7 +2549,7 @@ GameObject:
   - component: {fileID: 1713872822}
   - component: {fileID: 1713872821}
   m_Layer: 5
-  m_Name: Continue
+  m_Name: Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2644,7 +2685,7 @@ GameObject:
   - component: {fileID: 1792917463}
   - component: {fileID: 1792917462}
   m_Layer: 5
-  m_Name: ContinueButton
+  m_Name: StartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3110,7 +3151,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7227912313745612568, guid: 72d5069ff3031974a8f11726510940aa, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7227912313745612568, guid: 72d5069ff3031974a8f11726510940aa, type: 3}
       propertyPath: m_AnchorMax.x
