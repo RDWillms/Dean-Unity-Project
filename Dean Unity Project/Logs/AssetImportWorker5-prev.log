@@ -15,7 +15,7 @@ C:/Users/Dean-DX/Documents/GitHub/Dean-Unity-Project/Dean Unity Project
 -logFile
 Logs/AssetImportWorker5.log
 -srvPort
-59530
+64927
 Successfully changed project path to: C:/Users/Dean-DX/Documents/GitHub/Dean-Unity-Project/Dean Unity Project
 C:/Users/Dean-DX/Documents/GitHub/Dean-Unity-Project/Dean Unity Project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/Dean-DX/Documents/GitHub/Dean-Unity-Project/Dean Unity Project
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 97.88 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 97.14 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.2f1 (d6360bedb9a0)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/Resources/UnitySubsystems
@@ -63,60 +63,100 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56840
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56800
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.010412 seconds.
+Registered in 0.010705 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 93.62 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 92.34 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.705 seconds
-Domain Reload Profiling:
-	ReloadAssembly (705ms)
-		BeginReloadAssembly (130ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (0ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (458ms)
-			LoadAssemblies (129ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (106ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (275ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (94ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (130ms)
-				ProcessInitializeOnLoadMethodAttributes (41ms)
-				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (0ms)
-Platform modules already initialized, skipping
-Registering precompiled user dll's ...
-Registered in 0.014004 seconds.
+System.TypeInitializationException: The type initializer for 'UnityEditor.L10n' threw an exception. ---> System.OutOfMemoryException: Out of memory
+  at (wrapper managed-to-native) System.Object.__icall_wrapper_ves_icall_array_new_specific(intptr,int)
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].Initialize (System.Int32 capacity) [0x0001a] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at System.Collections.Generic.Dictionary`2[TKey,TValue]..ctor (System.Int32 capacity, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00015] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at System.Collections.Generic.Dictionary`2[TKey,TValue]..ctor (System.Int32 capacity) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at UnityEditor.L10n..cctor () [0x00019] in <a017e354f3154926a5617fbac3a64fcc>:0 
+   --- End of inner exception stack trace ---
+  at UnityEditor.Connect.AdsService..ctor () [0x0001a] in <fdc3c59d8a4e4569bc7b024a5c4069da>:0 
+  at UnityEditor.Connect.AdsService..cctor () [0x00001] in <fdc3c59d8a4e4569bc7b024a5c4069da>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
-=================================================================
-	Native Crash Reporting
-=================================================================
-Got a UNKNOWN while executing native code. This usually indicates
-a fatal error in the mono runtime or one of the native libraries 
-used by your application.
-=================================================================
+System.TypeInitializationException: The type initializer for 'UnityEditor.L10n' threw an exception. ---> System.OutOfMemoryException: Out of memory
+  at (wrapper managed-to-native) System.Object.__icall_wrapper_ves_icall_array_new_specific(intptr,int)
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].Initialize (System.Int32 capacity) [0x0001a] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at System.Collections.Generic.Dictionary`2[TKey,TValue]..ctor (System.Int32 capacity, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00015] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at System.Collections.Generic.Dictionary`2[TKey,TValue]..ctor (System.Int32 capacity) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at UnityEditor.L10n..cctor () [0x00019] in <a017e354f3154926a5617fbac3a64fcc>:0 
+   --- End of inner exception stack trace ---
+  at UnityEditor.Connect.AnalyticsService..ctor () [0x00013] in <fdc3c59d8a4e4569bc7b024a5c4069da>:0 
+  at UnityEditor.Connect.AnalyticsService..cctor () [0x00001] in <fdc3c59d8a4e4569bc7b024a5c4069da>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
-=================================================================
-	Managed Stacktrace:
-=================================================================
-=================================================================
-Received signal SIGSEGV
-Obtained 0 stack frames
+System.TypeInitializationException: The type initializer for 'UnityEditor.L10n' threw an exception. ---> System.OutOfMemoryException: Out of memory
+  at (wrapper managed-to-native) System.Object.__icall_wrapper_ves_icall_array_new_specific(intptr,int)
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].Initialize (System.Int32 capacity) [0x0001a] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at System.Collections.Generic.Dictionary`2[TKey,TValue]..ctor (System.Int32 capacity, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00015] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at System.Collections.Generic.Dictionary`2[TKey,TValue]..ctor (System.Int32 capacity) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at UnityEditor.L10n..cctor () [0x00019] in <a017e354f3154926a5617fbac3a64fcc>:0 
+   --- End of inner exception stack trace ---
+  at UnityEditor.Connect.BuildService..ctor () [0x00013] in <fdc3c59d8a4e4569bc7b024a5c4069da>:0 
+  at UnityEditor.Connect.BuildService..cctor () [0x00001] in <fdc3c59d8a4e4569bc7b024a5c4069da>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
+System.TypeInitializationException: The type initializer for 'UnityEditor.L10n' threw an exception. ---> System.OutOfMemoryException: Out of memory
+  at (wrapper managed-to-native) System.Object.__icall_wrapper_ves_icall_array_new_specific(intptr,int)
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].Initialize (System.Int32 capacity) [0x0001a] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at System.Collections.Generic.Dictionary`2[TKey,TValue]..ctor (System.Int32 capacity, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00015] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at System.Collections.Generic.Dictionary`2[TKey,TValue]..ctor (System.Int32 capacity) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at UnityEditor.L10n..cctor () [0x00019] in <a017e354f3154926a5617fbac3a64fcc>:0 
+   --- End of inner exception stack trace ---
+  at UnityEditor.Connect.CollabService..ctor () [0x00013] in <fdc3c59d8a4e4569bc7b024a5c4069da>:0 
+  at UnityEditor.Connect.CollabService..cctor () [0x00001] in <fdc3c59d8a4e4569bc7b024a5c4069da>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+System.TypeInitializationException: The type initializer for 'UnityEditor.L10n' threw an exception. ---> System.OutOfMemoryException: Out of memory
+  at (wrapper managed-to-native) System.Object.__icall_wrapper_ves_icall_array_new_specific(intptr,int)
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].Initialize (System.Int32 capacity) [0x0001a] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at System.Collections.Generic.Dictionary`2[TKey,TValue]..ctor (System.Int32 capacity, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00015] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at System.Collections.Generic.Dictionary`2[TKey,TValue]..ctor (System.Int32 capacity) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at UnityEditor.L10n..cctor () [0x00019] in <a017e354f3154926a5617fbac3a64fcc>:0 
+   --- End of inner exception stack trace ---
+  at UnityEditor.Connect.CrashService..ctor () [0x00013] in <fdc3c59d8a4e4569bc7b024a5c4069da>:0 
+  at UnityEditor.Connect.CrashService..cctor () [0x00001] in <fdc3c59d8a4e4569bc7b024a5c4069da>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Could not allocate 9832 bytes
+Crash!!!
+  ERROR: Error while initializing dbghelp.dll, GetLastError: 'The operation completed successfully.' (Address: 0000000000000000)
+
+========== OUTPUTTING STACK TRACE ==================
+
+  ERROR: Error while initializing dbghelp.dll, GetLastError: 'The operation completed successfully.' (Address: 0000000000000000)
+
+========== END OF STACKTRACE ===========
+
+A crash has been intercepted by the crash handler. For call stack and other details, see the latest crash report generated in:
+ * C:/Users/Dean-DX/AppData/Local/Temp/Unity/Editor/Crashes

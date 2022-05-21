@@ -505,18 +505,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explanations:
-  - Milk is a common ingredient you can find at your gorcery store. The fat proteins
-    that are found in milk can be used to provide creaminess and richness to your
-    favorite dishes.
-  - "Ice is water that is frozen when it reaches 32\xB0F or below. It is most commonly
-    used to keep things nice and cold and can also be used to create interesting
-    chain reactions!"
+  - Water is an inorganic, transparent, tasteless, odorless, and nearly colorless
+    chemical substance. It makes up 2/3 of the Earth's surface and is a key component
+    in making food, various checmial mixtures, and even life itself!
+  - Salt is a mineral composed primarily of sodium chloride. It comes from natural
+    crystalline rocks. Salt is very common to find throughout the world and is useful
+    for cooking and checmical compounds.
   - 
   - 
-  - Nice you created ice cream! The milk proteins stick to the fat droplets creating
-    a membrane to keep the the shape of the ice cream secure, while the ice helps
-    gives the ice cream a nice texture. You can add other components as well, such
-    as syrup, flavorings, and toppings to make a yummy dessert!
+  - That's salt water! Salt water is water that has a high concentration of dissolved
+    salts, mainly soidum choloride that makes up most of our sea water. It's used
+    to heal infections and as a dposit to extract the salt components. Don't drink
+    it though! Due to it's high salt content, salt water will only make you more
+    thirsty.
 --- !u!4 &390544475 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 718216478091916783, guid: 7d21e7e9912af0443be6a9e71b0bbbb2, type: 3}
@@ -780,7 +781,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4d6a5a6cf4d7100478dbdbe6ab202625, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 905aefa8652570842be8659ac40217a5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1051,11 +1052,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 571310685435777507, guid: 3cfc1410bbb78d54bae7e5eda9bdde56, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 340.45
+      value: 424.87
       objectReference: {fileID: 0}
     - target: {fileID: 571310685435777507, guid: 3cfc1410bbb78d54bae7e5eda9bdde56, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 68.62
+      value: 96.579
       objectReference: {fileID: 0}
     - target: {fileID: 571310685435777507, guid: 3cfc1410bbb78d54bae7e5eda9bdde56, type: 3}
       propertyPath: m_LocalScale.x
@@ -1099,11 +1100,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 571310685435777507, guid: 3cfc1410bbb78d54bae7e5eda9bdde56, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -252
+      value: -249
       objectReference: {fileID: 0}
     - target: {fileID: 571310685435777507, guid: 3cfc1410bbb78d54bae7e5eda9bdde56, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -169.84003
+      value: -186
       objectReference: {fileID: 0}
     - target: {fileID: 571310685435777507, guid: 3cfc1410bbb78d54bae7e5eda9bdde56, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1122,12 +1123,16 @@ PrefabInstance:
       value: Continue Button
       objectReference: {fileID: 0}
     - target: {fileID: 571310685963740405, guid: 3cfc1410bbb78d54bae7e5eda9bdde56, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 571310685963740405, guid: 3cfc1410bbb78d54bae7e5eda9bdde56, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1529233410}
     - target: {fileID: 571310685963740405, guid: 3cfc1410bbb78d54bae7e5eda9bdde56, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: MenuSelect
+      value: NextLevel
       objectReference: {fileID: 0}
     - target: {fileID: 571310685963740405, guid: 3cfc1410bbb78d54bae7e5eda9bdde56, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
@@ -1537,8 +1542,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -1.76, y: 1.01}
-  m_SizeDelta: {x: 962.99994, y: 411}
+  m_AnchoredPosition: {x: -1.65, y: 0.9}
+  m_SizeDelta: {x: 1048.7747, y: 438.292}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2083218813
 GameObject:
@@ -1627,7 +1632,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9a8ad968e4be589449263151b9b6739e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 79701843a1fcb394ba32ed84e26ca01f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1753,7 +1758,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.6874695, y: -5.062443}
+  m_AnchoredPosition: {x: -0.00000083447, y: -5.062443}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2127792729
@@ -1776,7 +1781,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ad1e51affbfb23c45b474aca370a3551, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1aeaebe2ff34a064093cfd36c9b31a37, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1972,7 +1977,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3583759191344496590, guid: 6272b86d6b7393a499a62f9d71dbc429, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 484
+      value: 483
       objectReference: {fileID: 0}
     - target: {fileID: 3583759191344496590, guid: 6272b86d6b7393a499a62f9d71dbc429, type: 3}
       propertyPath: m_AnchoredPosition.y
