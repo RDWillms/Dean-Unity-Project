@@ -15,7 +15,7 @@ C:/Users/Dean-DX/Documents/GitHub/Dean-Unity-Project/Dean Unity Project
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64927
+58528
 Successfully changed project path to: C:/Users/Dean-DX/Documents/GitHub/Dean-Unity-Project/Dean Unity Project
 C:/Users/Dean-DX/Documents/GitHub/Dean-Unity-Project/Dean Unity Project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/Dean-DX/Documents/GitHub/Dean-Unity-Project/Dean Unity Project
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 103.57 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 110.15 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.2f1 (d6360bedb9a0)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/Resources/UnitySubsystems
@@ -63,47 +63,85 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56120
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56116
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.009789 seconds.
+Registered in 0.010885 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 92.21 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 93.42 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.695 seconds
+- Completed reload, in  0.711 seconds
 Domain Reload Profiling:
-	ReloadAssembly (696ms)
-		BeginReloadAssembly (128ms)
+	ReloadAssembly (711ms)
+		BeginReloadAssembly (130ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (455ms)
-			LoadAssemblies (127ms)
+		EndReloadAssembly (464ms)
+			LoadAssemblies (130ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (104ms)
+			SetupTypeCache (109ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (27ms)
-			SetupLoadedEditorAssemblies (273ms)
+			SetupLoadedEditorAssemblies (277ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (92ms)
+				RefreshPlugins (93ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (129ms)
-				ProcessInitializeOnLoadMethodAttributes (41ms)
+				ProcessInitializeOnLoadAttributes (131ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.011716 seconds.
+Registered in 0.013460 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Dean-DX\Documents\GitHub\Dean-Unity-Project\Dean Unity Project\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Dean-DX\Documents\GitHub\Dean-Unity-Project\Dean Unity Project\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 95.46 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.295 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1296ms)
+		BeginReloadAssembly (167ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (1002ms)
+			LoadAssemblies (186ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (254ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (513ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (96ms)
+				BeforeProcessingInitializeOnLoad (113ms)
+				ProcessInitializeOnLoadAttributes (246ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
 
 =================================================================
 	Native Crash Reporting
@@ -118,27 +156,38 @@ used by your application.
 =================================================================
 =================================================================
 Received signal SIGSEGV
-Obtained 22 stack frames
-0x00007ff700da0866 ((<unknown>)) 
-0x00007ff700dadc94 ((<unknown>)) 
-0x00007ff700da0eb4 ((<unknown>)) 
-0x00007ff700dab72e ((<unknown>)) 
-0x00007ff70127bc5d ((<unknown>)) 
-0x00007ff7007a81b8 ((<unknown>)) 
-0x00007ff7014e7e8c ((<unknown>)) 
-0x00007ff7014e5f0f ((<unknown>)) 
-0x00007ff7014c8200 ((<unknown>)) 
-0x00007ff7014c767a ((<unknown>)) 
-0x00007ff7014cd0dc ((<unknown>)) 
-0x00007ff7014cd981 ((<unknown>)) 
-0x00007ff7014cd737 ((<unknown>)) 
-0x00007ff70079f862 ((<unknown>)) 
-0x00007ff7013e23eb ((<unknown>)) 
-0x00007ff702346572 ((<unknown>)) 
-0x00007ff70234592f ((<unknown>)) 
-0x00007ff70203bddf ((<unknown>)) 
-0x00007ff702493e78 ((<unknown>)) 
-0x00007ff7037b582e ((<unknown>)) 
-0x00007ff920847034 ((<unknown>)) 
-0x00007ff922802651 ((<unknown>)) 
+Obtained 33 stack frames
+0x00007ff649540866 (Unity) 
+0x00007ff64954dc94 (Unity) 
+0x00007ff64954ed84 (Unity) 
+0x00007ff649548752 (Unity) 
+0x00007ff64954b7ac (Unity) 
+0x00007ff648f63244 (Unity) 
+0x00007ff649a1bc24 (Unity) 
+0x00007ff64951ed18 (Unity) 
+0x00007ff649c61fa7 (Unity) 
+0x00007ff649c7c239 (Unity) 
+0x00007ff649c7a4ee (Unity) 
+0x00007ff649c87efb (Unity) 
+0x00007ff649c85f0f (Unity) 
+0x00007ff649c68200 (Unity) 
+0x00007ff649c6767a (Unity) 
+0x00007ff649c6d0dc (Unity) 
+0x00007ff649c6d981 (Unity) 
+0x00007ff649c6d737 (Unity) 
+0x00007ff648f3f862 (Unity) 
+0x00007ff64aaf574d (Unity) 
+0x00007ff64aaf53d2 (Unity) 
+0x00007ff64af75ce8 (Unity) 
+0x00007ff64b00bba2 (Unity) 
+0x00007ff64b00de2d (Unity) 
+0x00007ff64b011227 (Unity) 
+0x00007ff64b00a041 (Unity) 
+0x00007ff64afa34f8 (Unity) 
+0x00007ff64afa35cb (Unity) 
+0x00007ff64a7dbde4 (Unity) 
+0x00007ff64ac33e78 (Unity) 
+0x00007ff64bf5582e (Unity) 
+0x00007ffeefa47034 (KERNEL32) 
+0x00007ffeefb82651 (ntdll) 
 

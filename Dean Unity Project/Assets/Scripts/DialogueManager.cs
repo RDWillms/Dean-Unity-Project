@@ -6,28 +6,23 @@ using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
-    public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
     public GameObject startButton;
 
     private Queue<string> sentences;
-    //private DialogueTrigger trigger;
 
     void Start()
-    {
+    { //Sets start button to false at beginning of scene and begins to Queue up text from sentences array.
         startButton.SetActive(false);
         sentences = new Queue<string>();
-        //trigger.TriggerDialogue();
     }
 
     public void StartDialogue (Dialogue dialogue)
     {
+        sentences.Clear(); //Before Dialgoue seqeunce beings, empties out the array.
+        Debug.Log("Beginning conversation");
 
-        nameText.text = dialogue.name;
-
-        sentences.Clear();
-
-        foreach (string sentence in dialogue.sentences)
+        foreach (string sentence in dialogue.sentences) //This constantly checks if there is an available element in the array and then begins queueing up more sentences.
         {
             sentences.Enqueue(sentence);
         }
@@ -36,7 +31,7 @@ public class DialogueManager : MonoBehaviour
     }
 
     public void DisplayNextSentence ()
-    {
+    { //This function checks to see if the Queue has anymore sentences left. If not, runs EndDialgoue function.
         if (sentences.Count == 0)
         {
             EndDialogue();
@@ -48,8 +43,8 @@ public class DialogueManager : MonoBehaviour
     }
 
     void EndDialogue()
-    {
+    { //Once it detects that there is no more dialgue to go through, activates the start button so the player can start the game.
         startButton.SetActive(true);
-        Debug.Log("End of conversation");
+        Debug.Log("End of conversation. Ready to play!");
     }
 }

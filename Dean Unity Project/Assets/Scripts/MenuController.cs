@@ -10,11 +10,12 @@ public class MenuController : MonoBehaviour
         if(SceneName == "")
         {
             Application.Quit();
-            Debug.Log("Quit");
+            Debug.Log("Quiting Game");
         }
         else
         {
             SceneManager.LoadScene(SceneName);
+            Debug.Log(("Entering ") + SceneName);
         }
     } 
     

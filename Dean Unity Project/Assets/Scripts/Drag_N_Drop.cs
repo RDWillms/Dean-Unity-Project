@@ -10,7 +10,6 @@ public class Drag_N_Drop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     private RectTransform rectTransform;
     public Transform startPosition = null;
     private CanvasGroup canvasGroup;
-    private MixtureSlot Placed;
 
     private void Awake()
     {
@@ -23,37 +22,24 @@ public class Drag_N_Drop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
 
     public void OnBeginDrag(PointerEventData eventData)
     { //Once dragging, lowers the alpha of the canvas group of the object by 50%//
-            //eventData.pointerDrag = null;
-            Debug.Log("BeginDrag");
-            canvasGroup.alpha = .5f;
+            //canvasGroup.alpha = .5f;
             canvasGroup.blocksRaycasts = false;
-
-
     }
     public void OnDrag(PointerEventData eventData)
     { //Sets anchor position of the RectTransform fo the UI element to the position fo the cursor.//
-        Debug.Log("Dragging");
+        Debug.Log("Dragging mixture");
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
-
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {  //When dragging has ended returns canvasGroup alpha back to 100%//
         Debug.Log("EndDrag");
-        canvasGroup.alpha = 1f;
+        //canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
-        
-        //if (Placed.isPlaced == true)
-        //{
-
-        /* }
-         else
-         {
-             return;
-         }*/
     }
+
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log("OnPointerDown");
+
     }
 }
