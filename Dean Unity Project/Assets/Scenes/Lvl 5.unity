@@ -581,8 +581,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explanations:
   - 'Hydrogen is a key component in just about anything. Hydrogen is the lightest
-    and most abudant elelemnt in the universe. It helps fuel cells, refine pertroleum,
-    and is one of two main elelments that make up water. '
+    and most abudant element in the universe. It helps fuel cells, refine pertroleum,
+    and is one of two main elements that make up water. '
   - Carbon is the basic building block required to form proteins, carbohydrates and
     fats, and it plays a crucial role in regulating the physiology of the body. Carbon
     has the unique ability to be creat bonds with many different elements to create
@@ -592,7 +592,7 @@ MonoBehaviour:
     It has a very strong smell and can be used for some explosive properties.
   - Energy is the substance that fuels any action. From the battery in your car to
     the cells in your body, energy is crucial to making things (and people) work.
-    The law of convversvation states that energy cannot be created nor destroyed.
+    The law of conservation states that energy cannot be created nor destroyed.
   - Jumping electrons!! Is that...life? Those components must be the basics building
     blocks of life! Well you know what life is right? It's all around us. It's inside
     you, the trees outside, and the tiny cells invisible to the naked eye that surround

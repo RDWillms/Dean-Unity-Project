@@ -557,16 +557,16 @@ MonoBehaviour:
   - Water is an inorganic, transparent, tasteless, odorless, and nearly colorless
     chemical substance. It makes up 2/3 of the Earth's surface and is a key component
     in making food, various checmial mixtures, and even life itself!
-  - Sand is a granular material composed of disconstructed rock and other earthly
-    elements. You can find sand at beaches, desserts, and in the soil of your backyard.
-  - Gravel is similar to sand as it's a mixture of desconstructed rock. Except, gravel
+  - Sand is a granular material composed of deconstructed rock and other earthly
+    elements. You can find sand at beaches, deserts, and in the soil of your backyard.
+  - Gravel is similar to sand as it's a mixture of deconstructed rock. Except, gravel
     is coarser than sand and contains a variety of metallic deposits. You can find
     gravel on dirt roads and along certain streams.
   - 
   - You created concrete! Combining all these mixtures makes a liquid, maleable substance
     called cement. It's used mainly in construction for creating sidewalks and building
-    foundations. Once cement is exposed to air, it hardens and creates a hard solid
-    surface known as concrete.
+    foundations. Once cement is exposed to air, it hardens and creates a solid surface
+    known as concrete.
 --- !u!1 &382000365
 GameObject:
   m_ObjectHideFlags: 0
